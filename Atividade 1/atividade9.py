@@ -1,6 +1,10 @@
-preco_litros = float(input("insira o valor da gasolina"))
-valor_pagamento = float(input("insira o valor do pagamento"))
-
-quantidades_litros = preco_litros / valor_pagamento
-
-print(" quantidade de litros no tanque é: ",quantidades_litros)
+nome = input("insira seu nome")
+idade = int(input("insira sua idade"))
+while True:
+    if idade > 120 or idade < 0:
+        print("idade invalida: por favor, digite um valor menor ou igual a 120.")
+        idade = int(input("insira sua idade"))
+    else:
+        break
+dias_de_vida = idade * 365 
+print(" seu total de dias é: ", dias_de_vida)
