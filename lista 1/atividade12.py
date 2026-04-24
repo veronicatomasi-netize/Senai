@@ -1,11 +1,9 @@
-salario = float(input("Digite o salário: "))
+salario = float(input("digite seu salario Atual: "))
+x = salario + 0.15
+aumento = salario + x
+imposto = aumento + 0.08
+salariofinal = aumento + imposto 
+print("O salario sem aumento era: ", salario)
+print("O salario com aumento ficou: ", aumento)
+print("O salario final ficou: ", salariofinal)
 
-aumento = salario * 0.15
-salario_com_aumento = salario + aumento
-
-imposto = salario_com_aumento * 0.08
-salario_final = salario_com_aumento - imposto
-
-print(f"Salário inicial: R$ {salario:.2f}")
-print(f"Salário com aumento: R$ {salario_com_aumento:.2f}")
-print(f"Salário final: R$ {salario_final:.2f}")

@@ -1,12 +1,8 @@
-total = float(input("Digite o valor da conta: "))
+total = float(input("Digite o valor total da conta: "))
+valor1=total//3
+felipe = total - (2* valor1)
 
-divisao = total / 3
+print("O valor de carlos é: ", valor1)
+print("O valor de Andre é: ", valor1)
+print("O valor de felipe é: ", felipe)
 
-carlos = int(divisao)
-andre = int(divisao)
-
-felipe = total - (carlos + andre)
-
-print(f"Carlos deve pagar: R$ {carlos:.2f}")
-print(f"André deve pagar: R$ {andre:.2f}")
-print(f"Felipe deve pagar: R$ {felipe:.2f}")

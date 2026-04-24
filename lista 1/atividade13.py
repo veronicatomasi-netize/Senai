@@ -1,11 +1,5 @@
-numero = int(input("Digite um número até 3 dígitos: "))
+numero = input("Insira Numeros Inteiros de no maximo 3 digitos: ")
 
-centena = numero // 100
-resto = numero % 100
-
-dezena = resto // 10
-unidade = resto % 10
-
-print(f"CENTENA = {centena}")
-print(f"DEZENA = {dezena}")
-print(f"UNIDADE = {unidade}")
+print(f"Centena: {numero[:1]}")
+print(f"Dezena: {numero[1:2]}")
+print(f"Unidade: {numero[2:]}")
